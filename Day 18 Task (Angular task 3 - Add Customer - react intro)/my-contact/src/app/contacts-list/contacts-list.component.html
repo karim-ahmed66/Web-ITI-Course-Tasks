@@ -1,0 +1,19 @@
+<div class="container">
+  <p style="font-size: 20px; font-weight: bold; margin-top: 10px;"><img src="https://i.pinimg.com/564x/de/59/4e/de594ec09881da3fa66d98384a3c72ff.jpg" width="35px" height="30px"> Customers</p>
+  <ul class="nav nav-tabs" style="margin-left: 40px;">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" [routerLink]="['/All-Contacts']">Card View</a>
+    </li>
+    <li class="nav-item ">
+      <a class="nav-link disabled" aria-current="page"  href="#">Profile View</a>
+    </li>
+    <li class="nav-item ">
+      <a class="nav-link " aria-current="page"  [routerLink]="['/Add-Customers']">New Customer</a>
+    </li>
+  </ul>
+  <div class="row">
+    <app-contact-item [Contact]="myContact" *ngFor="let myContact of contactsArr"class="col-4">
+
+    </app-contact-item>
+  </div>
+</div>

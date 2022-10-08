@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <title>Laptop Store</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discription" content="Day 8 Task">
+    <meta name="author" content="Karim" />
+    <meta name="revised" content="Wed, August 24th, 2022, 11:15 am" />
+    <link rel="stylesheet" href="CSS/master.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: capitalize;
+        }
+
+        .card {
+            margin-bottom: 40px;
+        }
+
+        .card:hover {
+            scale: calc(1.1);
+            transition: 1s;
+        }
+    </style>
+</head>
+
+<body style="margin-left: 25px; margin-right: 25px;">
+    <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/Logo1.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Laptop
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Apple</a></li>
+                            <li><a class="dropdown-item" href="#">HP</a></li>
+                            <li><a class="dropdown-item" href="#">Lenovo</a></li>
+                            <li><a class="dropdown-item" href="#">DELL</a></li>
+                            <li><a class="dropdown-item" href="#">Infinex</a></li>
+                            <li><a class="dropdown-item" href="#">Huawei</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Help</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--============================================================ start carousel ==========================================================================================-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner" style="width: 1200px; margin: auto;">
+            <div class="carousel-item">
+                <img src="images/Slide11.jpg" class="d-block w-100" style="height: 600px;">
+            </div>
+            <div class="carousel-item active">
+                <img src="images/slide 12.jpg" class="d-block w-100" style="height: 600px;">
+
+            </div>
+            <div class="carousel-item">
+                <img src="images/slide 3.jpg" class="d-block w-100" style="height: 600px;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Apple MacBook Pro</h5>
+                    <p>Will Be Avilable Soon</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <hr style="width: 1200px; margin-left: 240px;" >
+    <!--==============================================================start cards============================================================================================-->
+    <div style="display: flex;">    
+        <p style="margin: auto; opacity: 0.8; font-size: 25px; font-weight: bolder; margin-bottom: 26px;" >Top
+        Selling</p>
+        <!--<button onclick="function myFunction()" class="btn btn-primary" id="switch" type="button" style="margin-left: 640px; width: 140px; font-size: 20px; margin-bottom: 40px;"> Mobile </button>-->
+    </div>
+    <div class="row row-cols-1 row-cols-md-4 g-5 mb-5" id="mybody">
+        <div class="col">
+            <div class="card h-100">
+                <img src="images/Lap1.png" alt="Lap1" class="card-img-top" style="height: 400px;">
+                <div class="card-body">
+                    <div class="salary">
+                        <p>Acer Aspire 3 A315-56-33U4 Laptop, Intel Core i3-1005G1, 15.6 Inch FHD, 1TB, 4GB RAM, Intel
+                            UHD Graphics, Dos, Black</p>
+                        <p style="color: blue; font-weight: bold; font-size: 20px;">6,999 EGP</p>
+                    </div>
+                    <hr>
+                    <div class="offer">
+                        <p>334 EGP / 36 Months with Raya Installments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="images/Lap3.png" alt="Lap" class="card-img-top"
+                    style="height: 250px; margin-top: 50px; margin-bottom: 100px;">
+                <div class="card-body">
+                    <div class="salary">
+                        <p>Infinix INBook X1 Pro XL12 Laptop, Intel Core i7-1065G7, 14.1 inch, 512GB, 16GB RAM, Intel
+                            Graphics Built In, Windows 10 Home, Grey</p>
+                        <p style="color: blue; font-weight: bold; font-size: 20px;">18,000 EGP</p>
+                    </div>
+                    <hr>
+                    <div class="offer">
+                        <p>334 EGP / 36 Months with Raya Installments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="images/Lap4.png" alt="Lap4" class="card-img-top"
+                    style="height: 250px; margin-top: 50px; margin-bottom: 100px;">
+                <div class="card-body">
+                    <div class="salary">
+                        <p>HP 245 G7 Laptop, AMD Ryzen R5-3500, 14 inch, 1TB , 4GB RAM , Dos, Black</p>
+                        <p style="color: blue; font-weight: bold; font-size: 20px; margin-top: 40px;">36,000 EGP</p>
+                    </div>
+                    <hr>
+                    <div class="offer">
+                        <p>334 EGP / 36 Months with Raya Installments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="images/Lap5.png" alt="Lap5" class="card-img-top" style="height: 340px; margin-top: 50px;">
+                <div class="card-body">
+                    <div class="salary">
+                        <p style="font-size: 14px; word-spacing: 0px;">HP Pavilion 15-dk2087ne Gaming Laptop, Intel Core
+                            i5-11300H, 15.6 Inch FHD, 1TB + 256GB SSD, 8GB RAM, NVIDIA GeForce GTX 1650 4GB, Dos, Shadow
+                            Black - 594S4EA</p>
+                        <p style="color: blue; font-weight: bold; font-size: 18px;">26,000 EGP</p>
+                    </div>
+                    <hr>
+                    <div class="offer">
+                        <p>334 EGP / 36 Months with Raya Installments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="images/Lap6.png" alt="Lap6" class="card-img-top" style="height: 400px;">
+                <div class="card-body">
+                    <div class="salary">
+                        <p>Lenovo Legion 5 Pro 16ITH6H Gaming Laptop, Intel Core i7-11800H, 16 Inch WQXGA, 1TB SSD, 16GB
+                            RAM, NVIDIA GeForce RTX 3060 6GB, Dos, StinGrey - 82JD00DTED</p>
+                        <p style="color: blue; font-weight: bold; font-size: 20px;">32,000 EGP</p>
+                    </div>
+                    <hr>
+                    <div class="offer">
+                        <p>334 EGP / 36 Months with Raya Installments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="images/Lap2.png" alt="Lap2" class="card-img-top"
+                    style="height: 300px; margin-top: 40px; margin-bottom: 55px;">
+                <div class="card-body">
+                    <div class="salary">
+                        <p>Apple Macbook Pro, Apple M1 Pro Processor, 14-inch Liquid Retina XDR, 512GB SSD, 16GB Ram,
+                            14-core GPU, Space Grey</p>
+                        <p style="color: blue; font-weight: bold; font-size: 20px;margin-top: 45px;">55,000 EGP</p>
+                    </div>
+                    <hr>
+                    <div class="offer">
+                        <p>334 EGP / 36 Months with Raya Installments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="images/Lap1.png" alt="Lap1" class="card-img-top" style="height: 400px;">
+                <div class="card-body">
+                    <div class="salary">
+                        <p>Acer Aspire 3 A315-56-33U4 Laptop, Intel Core i3-1005G1, 15.6 Inch FHD, 1TB, 4GB RAM, Intel
+                            UHD Graphics, Dos, Black</p>
+                        <p style="color: blue; font-weight: bold; font-size: 20px;">6,999 EGP</p>
+                    </div>
+                    <hr>
+                    <div class="offer">
+                        <p>334 EGP / 36 Months with Raya Installments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="images/Lap3.png" alt="Lap" class="card-img-top"
+                    style="height: 250px; margin-top: 50px; margin-bottom: 100px;">
+                <div class="card-body">
+                    <div class="salary">
+                        <p>Infinix INBook X1 Pro XL12 Laptop, Intel Core i7-1065G7, 14.1 inch, 512GB, 16GB RAM, Intel
+                            Graphics Built In, Windows 10 Home, Grey</p>
+                        <p style="color: blue; font-weight: bold; font-size: 20px;">18,000 EGP</p>
+                    </div>
+                    <hr>
+                    <div class="offer">
+                        <p>334 EGP / 36 Months with Raya Installments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="images/Lap4.png" alt="Lap4" class="card-img-top"
+                    style="height: 250px; margin-top: 50px; margin-bottom: 100px;">
+                <div class="card-body">
+                    <div class="salary">
+                        <p>HP 245 G7 Laptop, AMD Ryzen R5-3500, 14 inch, 1TB , 4GB RAM , Dos, Black</p>
+                        <p style="color: blue; font-weight: bold; font-size: 20px; margin-top: 40px;">36,000 EGP</p>
+                    </div>
+                    <hr>
+                    <div class="offer">
+                        <p>334 EGP / 36 Months with Raya Installments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="images/Lap5.png" alt="Lap5" class="card-img-top" style="height: 340px; margin-top: 50px;">
+                <div class="card-body">
+                    <div class="salary">
+                        <p style="font-size: 14px; word-spacing: 0px;">HP Pavilion 15-dk2087ne Gaming Laptop, Intel Core
+                            i5-11300H, 15.6 Inch FHD, 1TB + 256GB SSD, 8GB RAM, NVIDIA GeForce GTX 1650 4GB, Dos, Shadow
+                            Black - 594S4EA</p>
+                        <p style="color: blue; font-weight: bold; font-size: 18px;">26,000 EGP</p>
+                    </div>
+                    <hr>
+                    <div class="offer">
+                        <p>334 EGP / 36 Months with Raya Installments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--====================================================================start footer=======================================================================-->
+    <hr>
+    <div class="container" style="background-color: #e3f2fd2c;">
+        <footer class="py-5" >
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h4>Support</h4>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h4>Brand</h4>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Apple</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Dell</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">HP</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Lenovo</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h4>Contact</h4>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" style=>0117-8964-896</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">0107-5497-315</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">0127-1348-958</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">0157-5998-442</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h4>About Us</h4>
+                        <p style="padding-left: 10px; font-size: 12px; opacity: 0.6;">Being a comprehensive service platform for foreign trade, Made-in-China.com is committed to tapping business opportunities for Chinese suppliers and overseas buyers, and providing one-stop services for promoting the international trade between the two sides. Over the past few years, Made-in-China.com has become one of the most extensive and reliable web addresses for international trade.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>© 2022 Company, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <img src="images/twitter.png" style="width: 25px;">
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <img src="images/youtube.png" style="width: 25px;">
+                    </svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <img src="images/facebook-logo.png" style="width: 25px;">
+                    </svg></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+        
+        function myFunction(){
+            var dark = 0;
+            if(dark==0)
+            {
+                document.getElementById("switch").innerHTML="Mobile";
+                document.getElementById("mybody").style.backgroundColor="lightgray";
+                dark = 1;
+            }
+            else if (dark==1)
+            {
+                document.getElementById("switch").innerHTML="Laptop";
+                document.getElementById("mybody").style.backgroundColor="white";
+                dark = 0;
+            }
+        }
+        </script>
+</body>
+
+</html>

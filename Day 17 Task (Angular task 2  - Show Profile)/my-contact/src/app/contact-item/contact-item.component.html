@@ -1,0 +1,16 @@
+<div class="card mb-3 mt-5" style="width: 425px;height: 200px; margin-left: 40px;">
+  <div class="row g-0">
+    <div class="col-md-4 mt-4">
+      <img src="https://www.thearoralawfirm.com/wp-content/uploads/2021/01/testimonials_man3.png" class="img-fluid rounded-start mx-3">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body mx-4">
+        <h5 class="card-title mb-3">{{Contact.name}}</h5>
+        <p class="card-text mb-2">{{Contact.email}}</p>
+        <p class="card-text mb-2">{{Contact.address.city | uppercase}}</p>
+        <!--<button style="color: blue;border: none;background-color: white;" [routerLink]="['/my-contact/src/app/contact-profile',Contact.id]">View Orders</button>-->
+        <a [routerLink]="['/profile',Contact.id]" class="btn btn-primary" style="position: absolute; top: 150px;">Show Profile</a>
+      </div>
+    </div>
+  </div>
+</div>

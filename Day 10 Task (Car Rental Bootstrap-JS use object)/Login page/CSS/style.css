@@ -1,0 +1,161 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    background-image: linear-gradient(to right, rgba(227,88,4,255), rgba(228,150,10,255));
+    background-size: cover;   
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header
+{
+    width: 1200px;
+    height: 600px;
+    margin: 100px auto;
+    border-radius: 40px;
+}
+/* --- Left --- */
+.left
+{
+    width: 50%;
+    float: left;
+    height: 100%;
+    background-image: linear-gradient(#0f1b30cc, #0f172680), url(../images/background.jfif);
+    background-size: cover;
+    background-position: center;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+}
+.left .container
+{
+    width: 50%;
+    text-align: center;
+    margin: 170px auto;
+    
+}
+.left .container h1
+{
+    color: #a1a5b7;
+    opacity: 0.7;
+    font-size: 50px;
+    font-family: sans-serif;
+    margin-bottom: 100px;
+    text-transform: capitalize; 
+}
+.left .container img
+{
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255, 0.274);
+    border-radius: 50%;
+    padding: 10px;
+}
+.left .container img:hover
+{
+    background-color: black;
+    transition: 1s;
+}
+.left .container p
+{
+    color: #999db2;
+    font-size: 15px;
+    text-decoration: none;
+}
+/* --- Right --- */
+.right
+{
+    background-color: rgba(255, 255, 255, 0.288);
+    width: 50%;
+    height: 100%;
+    float: left;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+}
+.right .container
+{
+    text-align: center;
+}
+.right .container form 
+{
+    margin-top: 65px;
+}
+.right .container form input 
+{
+    font-size: 20px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 60%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: rgba(240, 248, 255, 0.096);
+    border: none;
+    outline: none;
+}
+.right .container form input:hover
+{
+    border: 2px solid orangered;
+    transition: 0.3s;
+}
+.right .container form .remember
+{
+    text-align: left;
+    margin: auto 120px;
+    margin-bottom: 16px;
+}
+.right .container form .remember input
+{
+    float: left;
+    margin-right: 4px;
+    width: 20px;
+    margin-top: 4px;
+}
+.right .container form .remember label
+{
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #5a5a5a;
+    font-family: sans-serif;
+}
+.right .container form .btn
+{
+    margin-top: 35px;
+}
+.right .container form .button
+{
+    display: inline-block;
+    width: 60%;
+    padding: 13px;
+    background-color: rgba(227,88,4,255);
+    opacity: 0.7;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    text-decoration: none;
+}
+.right .container form .button:hover
+{
+    opacity: 1;
+    transition: 1s;
+}
+.right .container form .link
+{
+    display: block;
+    margin: 20px auto;
+    text-decoration: none;
+    font-size: 15px;
+    color: gray;
+}
+.right .container h1 
+{
+    margin-top: 55px;
+    font-size: 45px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    color: rgb(8, 8, 99);
+}
+

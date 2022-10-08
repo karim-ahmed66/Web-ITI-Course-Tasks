@@ -1,0 +1,87 @@
+*
+{
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+body
+{
+    background-repeat: repeat-x;
+    height: 600px;
+    background-image: linear-gradient(to bottom, rgba(65,73,91,255),rgba(158,168,183,255),rgba(242,242,242,255));
+}
+.container
+{    
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 1000px;
+    height: 420px;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 5px 15px 25px #b1b1b1;
+}
+.container .container-left
+{
+    width: 40%;
+    border-radius: 20px 0 0 20px;
+}
+.container .container-left img
+{
+    width: 400px;
+    border-radius: 20px 0 0 20px;
+    height: 420px;
+
+}
+.container .container-right
+{
+    width: 60%;
+    border-radius: 0 20px 20px 0;
+    text-align: center;
+}
+.container .container-right h3
+{
+    font-size: 25px;
+    opacity: 0.7;
+}
+.container .container-right p
+{
+    opacity: 0.3;
+}
+.container .container-right input[type='text']
+{
+    width: 300px;
+    font-size: 16px;
+    margin-top: 15px;
+    border-radius: 25px;
+    padding: 9px;
+    border-style: none;
+    text-align: center;
+}
+.container .container-right input[type='text']:hover
+{
+    background-color: #b1b1b1;
+}
+.container .container-right button
+{
+    width: 270px;
+    font-size: 16px;
+    margin-top: 30px;
+    border-radius: 25px;
+    padding: 9px;
+    border-style: none;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    background-color: gray;
+}
+.container .container-right button:hover
+{
+    scale: calc(1.1);
+}
+.container .container-right #message
+{
+    margin-top: 30px;
+    color: white;
+    opacity: 1;
+}

@@ -1,0 +1,153 @@
+*
+{
+	box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+body 
+{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.logo-search .container
+{
+    height: 60px;
+    display: flex;
+}
+.logo-search .container .left
+{
+    width: 20%;
+}
+.logo-search .container .left img
+{
+    width: 100%;
+    height: 41px;
+}
+.logo-search .container .center
+{
+    width: 60%;
+}
+.logo-search .container .center form .search input[type=text] 
+{
+    align-items: center;
+    justify-content:center ;
+    width: 100%;
+    height: 31px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: white;
+    background-image: url(/images/icon\ search.png);      /* ERORR ERORR */
+    background-position: 10px 2px;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+.logo-search .container .right
+{
+    display: flex;
+    width: 20%;
+    justify-content: space-evenly;
+}
+.logo-search .container .right button
+{
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    margin-top: 5px;
+    height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.logo-search .container .right button:hover
+{
+    background-color: RoyalBlue;
+    transition: 1s;
+}
+.logo-search .container .right button img
+{
+    padding-top: 0px;
+}
+.container-nav
+{
+    height: 40px;
+}
+.container-nav ul
+{
+    margin: 0px;
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    text-align: center;
+}
+.container-nav ul li
+{
+    background-color: #f7f7ff;
+    width: calc(100% / 9);
+    cursor: pointer;
+    height: 30px;
+    padding-top: 6px;
+    font-size: 15px;
+    margin: 1px;
+}
+.container-nav ul li:hover
+{
+    background-color: rgb(93, 126, 227);
+    color: white;
+    transition: 1s;
+}
+.container-cards
+{
+    border: black solid 1px;
+    border-radius: 5px;
+    padding: 15px;
+}
+.container-cards .cards
+{
+    display: flex;   
+    flex-wrap: wrap;
+}
+.container-cards .cards .card
+{
+    width: 22.8%; 
+    height: 430px;
+    border: black solid 1px;
+    margin: 15px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 30px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    flex-direction: column;
+    align-items: center;
+}
+.container-cards .cards .card:hover
+{
+    scale: calc(1.1);
+    transition: 0.7s;
+}
+.container-cards .cards .card .img img
+{
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+}
+.container-cards .cards .card .text
+{
+    text-align: left;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: rgb(214, 229, 245) 0px 0px 10px 0px;
+    flex-direction: column;
+    align-items: center;
+}
+.container-cards .cards .card .text .salary .egp
+{
+    color: dodgerblue;
+    font-weight: 900;
+}
+.container-cards .cards .card .text .offer
+{
+    font-size: 14px;
+}

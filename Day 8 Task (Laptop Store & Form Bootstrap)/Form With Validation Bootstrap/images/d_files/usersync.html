@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)https://ad-cdn.technoratimedia.com/html/usersync.html?src=prebid_prebid_6.17.0 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<script type="text/javascript">!function(e){var t={};function n(i){if(t[i])return t[i].exports;var r=t[i]={i:i,l:!1,exports:{}};return e[i].call(r.exports,r,r.exports,n),r.l=!0,r.exports}n.m=e,n.c=t,n.d=function(e,t,i){n.o(e,t)||Object.defineProperty(e,t,{configurable:!1,enumerable:!0,get:i})},n.n=function(e){var t=e&&e.__esModule?function(){return e["default"]}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=2)}([function(e,t){e.exports={iterate_selfandparents:function(e,t){do{try{if(e&&t.call(e))return!0}catch(n){}}while(e&&e.parent&&e!==e.parent&&(e=e.parent))},iframe_findfromwindow:function(e){try{return e.frameElement}catch(t){}return null},get_script_src:function(){if(document.currentScript)return document.currentScript.src;var e=document.getElementsByTagName("script");for(var t in e){var n=e[t];if(n.src&&n.src.indexOf("technoratimedia.com/")>0)return n.src}return null}}},function(e,t){function n(e){var t=0,n=e;do{e=n,n=decodeURIComponent(e),t++}while(t<10&&n!==e);return n&&(n.match(/\w+(?:@)[a-zA-Z_]+?\.[a-zA-Z]{2,3}/)||n.match(/(?:username|password|sessionid)=/))}e.exports=function(){var e=null,t=!1,i=!1,r=!1;try{e=window.top.location.href;try{n(window.top.document.referrer)&&(window.top.document.referrer,t=!0)}catch(s){}}catch(s){}if(null===e){i=!0;for(var o=20,a=window;o>0&&a!==window.top;){try{n(e=a.document.referrer)&&(t=!0),a.location.href}catch(s){}a=a.parent,o--}if(window.location.ancestorOrigins&&window.location.ancestorOrigins.length){var c=window.location.ancestorOrigins[window.location.ancestorOrigins.length-1];null!==e&&e.substr(0,c.length)===c||(r=!0,e=c)}}return null!==e&&"string"==typeof e&&e.match(/^https?:\/\/(?:[^\@\/]*\@)?([^\/\:]+)/)?(n(e)&&(t=!0),e.length>500&&(e=e.replace(/\?.*$/,""))):e=function(e){try{if(window.location.protocol.match(/^https?:$/))return window.location.protocol}catch(s){}return e.match(/^https:/)?"https:":"http:"}(e||"")+"//unknown/",{origin:e,is_in_crossdomain_frame:i,is_in_nested_crossdomain_frame:r,pii_detected:t}}()},function(e,t,n){window.TN8=window.TN8||{},window.TN8.apn=n(3),window.TN8.tag=n(4),window.TN8.viewability=n(5),window.TN8.location=n(1),window.TN8.utils=n(0),window.TN8.privacyString=n(6),window.TN8.userSyncPixels=n(7),e.exports=window.TN8,n(8)},function(e,t){t.writeTag=function(e,t,n,i,r,o,a){var c=document,s=document.getElementsByTagName("script"),d=1;for(d=1;d<s.length;d++){if(s[s.length-d].src.indexOf("/adserv_")>0)break}var p=s[s.length-d],m=p.src.replace(/^[^\?]+\??/,""),u=(p.src.substring(0,6),window.getCookie&&getCookie("TMEDIA")||-1),l=window.getCookie&&getCookie("TMEDIAISP");-1!=u&&(m=m+"&dmsc="+u.substring(5,u.indexOf("/"))+"&dmsi="+escape(l));a=a||"0";var h=/iphone|ipad|ipod|android|silk|kindle fire/i.test(navigator.userAgent.toLowerCase()),w="https://secure.adnxs.com";(w+="/ttj?id="+r,n.indexOf(",")>-1)?w+="&promo_alignment=none&size="+n.substring(0,n.indexOf(","))+"&promo_sizes="+n.substring(n.indexOf(",")+1):w+="&size="+n;w+="&pt1="+e,w+="&pt2="+t,w+="&pt3="+a,w+="&rev="+a,w+="&position="+("ATF"===i?"above":"below"),h&&(w+="&st=mobile_web"),w+="&brlg="+(window.navigator.userLanguage||window.navigator.language||"").toLowerCase(),w+=o,w+="&"+m,w+="&cb="+Math.floor(11e9*Math.random()),c.write('<script type="text/javascript" src="'+w+'"><\/script>')}},function(e,t){e.exports={createIF:function(){var e=document.createElement(String.fromCharCode(105)+"frame");return e.width=0,e.height=0,e.frameborder=0,e.scrolling="no",e.marginheight=0,e.marginwidth=0,e.opmargin=0,e.leftmargin=0,(e.frameElement||e).style.cssText="border: 0; visibility:hidden; display:none",e},dropJsPixel:function(e){var t=document.createElement("script");t.type="text/javascript",t.src=e,t.async=!0,(document.head||document.getElementsByTagName("head")[0]).appendChild(t)},dropIFPixel:function(e){var t=this.createIF();t.src=e,(document.body||document.getElementsByTagName("body")[0]).appendChild(t)},dropIFScript:function(e){var t=this.createIF();t.onload=function(){var t=this.contentWindow.document,n=t.createElement("script");n.src=e,t.head.appendChild(n)},(document.body||document.getElementsByTagName("body")[0]).appendChild(t)},dropPixel:function(e){var t=document.createElement("img");t.style.cssText="border: 0;width:0;height:0;visibility:hidden;display:none;",t.src=e,(document.body||document.getElementsByTagName("body")[0]).appendChild(t)}},window&&(window.TN8||(window.TN8={}),window.TN8.tag||(window.TN8.tag=e.exports))},function(e,t,n){var i=n(0),r=n(1);function o(){var e=null;return"undefined"!=typeof document.hidden?e="hidden":"undefined"!=typeof document.mozHidden?e="mozHidden":"undefined"!=typeof document.msHidden?e="msHidden":"undefined"!=typeof document.webkitHidden&&(e="webkitHidden"),e?!document[e]:function(){var e=!1;try{window.top.document}catch(t){return window.document.hasFocus()||null}return i.iterate_selfandparents(window,function(){if(!e){this.document.hasFocus()&&(e=!0);for(var n=0;n<this.frames.length;n++)try{if(this.frames[n].contentWindow.document.hasFocus()){e=!0;break}}catch(t){}}}),e}()}function a(e){for(var t,n,r=null,o=window,a=({l:0,t:0,r:"innerWidth"in window?window.innerWidth:window.document.documentElement.clientWidth,b:"innerHeight"in window?window.innerHeight:window.document.documentElement.clientHeight}),c=a.r*a.b,s=0,d=1;o!==window.top;){try{if(o.parent.document,null===(r=i.iframe_findfromwindow(o)))return null;t=r.getBoundingClientRect(),n={w:"innerWidth"in o.parent?o.parent.innerWidth:o.document.parent.documentElement.clientWidth,h:"innerHeight"in o.parent?o.parent.innerHeight:o.document.parent.documentElement.clientHeight}}catch(_){try{return o&&o.$sf&&o.$sf.ext&&o.$sf.ext.inViewPercentage?o.$sf.ext.inViewPercentage():null}catch(_){return null}}if(a.l=Math.max(Math.min(a.l+t.left,n.w),0),a.t=Math.max(Math.min(a.t+t.top,n.h),0),a.r=Math.max(Math.min(a.r+t.left,n.w,t.right),0),a.b=Math.max(Math.min(a.b+t.top,n.h,t.bottom),0),e){var p=0,m=Math.max(1,Math.floor(Math.sqrt(s/500))),u=Math.floor(m/2);Math.pow(m,2);console.log("before",s);for(var l=a.l,h=l+u;h<a.r;h=(l+=m)+u)for(var w=a.t,f=w+u;f<a.b;f=(w+=m)+u)o.parent.document.elementFromPoint(h,f)!==r&&p++;console.log("measurements_off_screen",p,500),d=1-p/500}o=o.parent}s=(a.r-a.l)*(a.b-a.t);var v=c>0?s/c:0;return Math.min(v,d)}e.exports={inViewPercentage:a,getMoat:function(){return r.is_in_nested_crossdomain_frame?-1:o()&&function(e){var t=a();return null===t?null:!(t<e)}(.5)?r.is_in_crossdomain_frame?2:1:0},getAceView:function(){return r.is_in_nested_crossdomain_frame?-1:o()&&function(e){for(var t,n,r=null,o=window,a=({l:0,t:0,r:"innerWidth"in window?window.innerWidth:window.document.documentElement.clientWidth,b:"innerHeight"in window?window.innerHeight:window.document.documentElement.clientHeight}),c=a.r*a.b*e;o!==window.top;){try{if(o.parent.document,null===(r=i.iframe_findfromwindow(o)))return null;t=r.getBoundingClientRect(),n={w:"innerWidth"in o.parent?o.parent.innerWidth:o.parent.document.documentElement.clientWidth,h:"innerHeight"in o.parent?o.parent.innerHeight:o.parent.document.documentElement.clientHeight}}catch(f){try{return o&&o.$sf&&o.$sf.ext&&o.$sf.ext.inViewPercentage?o.$sf.ext.inViewPercentage()>=e:null}catch(f){return null}}a.l=Math.max(Math.min(a.l+t.left,n.w),0),a.t=Math.max(Math.min(a.t+t.top,n.h),0),a.r=Math.max(Math.min(a.r+t.left,n.w,t.right),0),a.b=Math.max(Math.min(a.b+t.top,n.h,t.bottom),0);var s=(a.r-a.l)*(a.b-a.t);if(s<c)return!1;for(var d=0,p=Math.max(1,Math.floor(Math.sqrt(s/500))),m=Math.floor(p/2),u=(Math.pow(p,2),a.l),l=u+m;l<a.r;l=(u+=p)+m){for(var h=a.t,w=h+m;w<a.b;w=(h+=p)+m)o.parent.document.elementFromPoint(l,w)!==r&&d++;if(1-d/500<e)return!1}o=o.parent}return!0}(.5)?r.is_in_crossdomain_frame?2:1:0}},window&&(window.TN8=window.TN8||{},window.TN8.viewability=e.exports)},function(e,t){e.exports=function(e){var t;try{for(var n=window;!t&&(n.__uspapi&&"function"==typeof n.__uspapi&&(t=n),n!==window.top);)n=n.parent;t&&t.__uspapi("getUSPData",1,function(t,n){n&&t.uspString?e(t.uspString):e()})}catch(i){}t||function(e,t,n){for(var r,o=window;!r;){try{o.frames.__uspapiLocator&&(r=o)}catch(i){}if(o===window.top)break;o=o.parent}if(r){var a,c,s=function(t){var n=t&&t.data&&t.data.__uspapiReturn;n&&n.callId&&a===n.callId&&(t.stopImmediatePropagation(),clearTimeout(c),e(n.returnValue),window.removeEventListener("message",s,!1))};window.addEventListener("message",s,!1),function(){a=Math.random()+"";var e={__uspapiCall:{command:t,version:n,callId:a}};r.postMessage(e,"*")}(),c=setTimeout(function(){e(),window.removeEventListener("message",s,!1)},1e3)}else e()}(e,"getUSPData",1)}},function(e,t){e.exports={userSyncPixels:[{comment:"TTD",pixelType:"PIXEL",partnerId:"7",cookieName:"tads_uidp_7",urlTemplate:"https://match.adsrvr.org/track/cmf/generic?ttd_pid=technoratimedia&ttd_tpi=1",vastImpressionSupport:!0},{comment:"Rubicon",pixelType:"IFRAME",partnerId:"44",cookieName:"tads_uidp_44",urlTemplate:"https://secure-assets.rubiconproject.com/utils/xapi/multi-sync.html?p=synacor_xapi&endpoint=us-east"},{comment:"Pubmatic OpenRtb",pixelType:"IFRAME",partnerId:"45",cookieName:"tads_uidp_45",urlTemplate:"https://ads.pubmatic.com/AdServer/js/user_sync.html?p=156344&predirect=https%3A%2F%2Fsync.technoratimedia.com%2Fservices%3Fsrv%3Dcs%26pid%3D45%26uid%3D"},{comment:"AppNexus OpenRtb",pixelType:"PIXEL",partnerId:"46",cookieName:"tads_uidp_46",urlTemplate:"https://secure.adnxs.com/getuid?https://sync.technoratimedia.com/services?srv=cs&pid=46&uid=$UID",chainedRedirectSupport:!0,chainedRedirectOverrides:{urlTemplate:"https://secure.adnxs.com/getuid?https://sync.technoratimedia.com/servicesRedirect?srv=cs&pid=46&uid=$UID"},vastImpressionSupport:!0},{comment:"OpenX",pixelType:"IFRAME",partnerId:"50",cookieName:"tads_uidp_50",urlTemplate:"https://us-u.openx.net/w/1.0/cm?id=8da2f9dd-77de-4961-a71d-959c5609fdb1&ph=9c552f28-6766-4d68-8e0e-995276acc8c6&r=https://sync.technoratimedia.com/services?srv=cs&pid=50&uid="},{comment:"33Across",pixelType:"IFRAME",partnerId:"61",cookieName:"tads_uidp_61",urlTemplate:"https://pixel.33across.com/ps?m=xch&rt=html&id=0014000001aXjnGAAS&ru=https%3A%2F%2Fsync.technoratimedia.com%2Fservices%3Fsrv%3Dcs%26pid%3D61%26uid%3D33XUSERID33X"},{comment:"Criteo",pixelType:"PIXEL",partnerId:"64",cookieName:"tads_uidp_64",urlTemplate:"https://gum.criteo.com/sync?c=372&r=1&u=https%3A%2F%2Fsync.technoratimedia.com%2Fservices%3Fsrv%3Dcs%26pid%3D64%26uid%3D%40USERID%40",vastImpressionSupport:!0},{comment:"Spot X OpenRTB",pixelType:"PIXEL",partnerId:"72",cookieName:"tads_uidp_72",urlTemplate:"https://sync.search.spotxchange.com/partner?adv_id=8725&redir=https%3A%2F%2Fuat-net.technoratimedia.com%2Fservices%3Fsrv%3Dcs%26pid%3D72%26uid%3D%24SPOTX_USER_ID",chainedRedirectSupport:!0,chainedRedirectOverrides:{urlTemplate:"https://sync.search.spotxchange.com/partner?adv_id=8725&redir=https%3A%2F%2Fuat-net.technoratimedia.com%2FservicesRedirect%3Fsrv%3Dcs%26pid%3D72%26uid%3D%24SPOTX_USER_ID"},vastImpressionSupport:!0},{comment:"Beeswax - BEES",pixelType:"PIXEL",partnerId:"73",cookieName:"tads_uidp_73",urlTemplate:"https://match.prod.bidr.io/cookie-sync/syn",vastImpressionSupport:!0},{comment:"Rhythmone - RO2",pixelType:"PIXEL",partnerId:"76",cookieName:"tads_uidp_76",urlTemplate:"https://sync.1rx.io/usersync2/rmpssp?sub=synacor",vastImpressionSupport:!0},{comment:"OneTag - OT",pixelType:"IFRAME",partnerId:"77",cookieName:"tads_uidp_77",urlTemplate:"https://onetag-sys.com/usync/?pubId=572a470226457b8"},{comment:"Improve Digital - ID",pixelType:"PIXEL",partnerId:"79",cookieName:"tads_uidp_79",urlTemplate:"https://ad.360yield.com/server_match?partner_id=1669&r=https%3A%2F%2Fuat-net.technoratimedia.com%2Fservices%3Fsrv%3Dcs%26pid%3D79%26uid%3D%7BPUB_USER_ID%7D",chainedRedirectSupport:!0,chainedRedirectOverrides:{urlTemplate:"https://ad.360yield.com/server_match?partner_id=1669&r=https%3A%2F%2Fuat-net.technoratimedia.com%2FservicesRedirect%3Fsrv%3Dcs%26pid%3D79%26uid%3D%7BPUB_USER_ID%7D"},vastImpressionSupport:!0},{comment:"Verizon Media - VZM",pixelType:"PIXEL",partnerId:"80",cookieName:"tads_uidp_80",urlTemplate:"https://ups.analytics.yahoo.com/ups/58266/sync?redir=true",vastImpressionSupport:!0},{comment:"Index Exchange - IX",partnerId:"82",pixelType:"PIXEL",cookieName:"tads_uidp_82",urlTemplate:"https://ssum-sec.casalemedia.com/usermatchredir?s=191740&cb=https%3A%2F%2Fuat-net.technoratimedia.com%2Fservices%3Fsrv%3Dcs%26pid%3D82%26uid%3D",chainedRedirectSupport:!0,chainedRedirectOverrides:{urlTemplate:"https://ssum-sec.casalemedia.com/usermatchredir?s=191740&cb=https%3A%2F%2Fuat-net.technoratimedia.com%2FservicesRedirect%3Fsrv%3Dcs%26pid%3D82%26uid%3D"},vastImpressionSupport:!0},{comment:"PulsePoint - pp",pixelType:"PIXEL",partnerId:"83",cookieName:"tads_uidp_83",urlTemplate:"https://bh.contextweb.com/bh/rtset?rurl=https%3A%2F%2Fuat-net.technoratimedia.com/services?srv=cs&pid=83&uid=%%VGUID%%",vastImpressionSupport:!0},{comment:"TripleLift",pixelType:"IFRAME",partnerId:"88",cookieName:"tads_uidp_88",urlTemplate:"https://eb2.3lift.com/sync?redird=SN85RLf7qQar",chainedRedirectSupport:!0,chainedRedirectOverrides:{urlTemplate:"https://eb2.3lift.com/getuid?redir=https%3A%2F%2Fsync.technoratimedia.com%2FservicesRedirect%3Fsrv%3Dcs%26pid%3D88%26uid%3D$UID"},vastImpressionSupport:!0}],visitorIdUserSyncPixels:[{comment:"UCX",pixelType:"PIXEL",partnerId:"37",cookieName:"tads_uidp_37",urlTemplate:"https://sync.aralego.com/idSync?ucf_nid=par-488A3E6BD8D997D0ED8B3BD34D8BA4B&ucf_user_id={visitorID}&redirect=https%3A%2F%2Fsync.technoratimedia.com%2Fservices%3Fsrv%3Dcs%26pid%3D37%26uid%3DUCFUID",chainedRedirectSupport:!1,chainedRedirectOverrides:{urlTemplate:"https://sync.aralego.com/idSync?ucf_nid=par-488A3E6BD8D997D0ED8B3BD34D8BA4B&ucf_user_id={visitorID}&redirect=https%3A%2F%2Fsync.technoratimedia.com%2FservicesRedirect%3Fsrv%3Dcs%26pid%3D37%26uid%3DUCFUID"},vastImpressionSupport:!0},{comment:"Bidswitch",pixelType:"PIXEL",partnerId:"48",cookieName:"tads_uidp_48",urlTemplate:"https://x.bidswitch.net/sync?ssp=synacor&user_id={visitorID}",vastImpressionSupport:!0},{comment:"Conversant",pixelType:"PIXEL",partnerId:"49",cookieName:"tads_uidp_49",urlTemplate:"https://synacor-match.dotomi.com/match/bounce/current?networkId=63258&version=1&nuid={visitorID}",vastImpressionSupport:!0},{comment:"Media.Net",pixelType:"PIXEL",partnerId:"62",cookieName:"tads_uidp_62",urlTemplate:"https://contextual.media.net/cksync.php?cs=3&type=syn&ovsid={visitorID}&redir=https%3A%2F%2Fsync.technoratimedia.com%2Fservices%3Fsrv%3Dcs%26pid%3D62%26uid%3D%5BUSER_ID%5D",vastImpressionSupport:!0}],bidiUserSyncPixels:[{comment:"Taboola bi-directional",pixelType:"PIXEL",cookieName:"tads_tbla_bidi",timeoutSeconds:1209600,urlTemplate:"https://sync.taboola.com/sg/synacorrtb-network/1/rtb-h?taboola_hm={visitorID}"},{comment:"Chocolate",pixelType:"PIXEL",cookieName:"tads_choc_bidi",timeoutSeconds:2592e3,urlTemplate:"https://cs.chocolateplatform.com/bid?advid=5704&bcid={visitorID}"}]}},function(e,t){!function(){var e;for(window.TN8=window.TN8||{},window.TN8.lq=window.TN8.lq||[],window.TN8.lq.push=window.TN8.lq.unshift=function(e){e.apply(window.TN8)};(e=window.TN8.lq.shift())!==undefined;)try{e.apply(window.TN8)}catch(t){console.error("TN8: Loading queue error",{callback:e,error:t})}}()}]);</script></head>
+<body marginwidth="0" marginheight="0">
+<div id="container">
+
+</div>
+<script type="text/javascript">
+    (function(d, w, s){
+        var TN8 = w.TN8 = (w.TN8 || {});
+        if (!TN8.lq) {
+            TN8.lq = TN8.lq || [];
+            s = d.createElement('script');
+            s.src = "https://ad-cdn.technoratimedia.com/lib.js";
+            d.head.appendChild(s);
+        }
+    }(document, window));
+</script>
+<script>
+function getCookies() {
+    var cookies = {};
+    document.cookie.split(";").forEach(function (cookie) {
+        var cookieKV = cookie.split('=');
+        cookies[cookieKV[0].trim()] = cookieKV[1];
+    });
+    return cookies;
+}
+
+function getQP() {
+	var qp = {};
+	var pairs = window.location.search.replace(/^\?/, '').split('&')
+	for (var i = 0; i < pairs.length; i++) {
+		var pair = pairs[i].split('=');
+		qp[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || '');
+	}
+	return qp;
+}
+
+function doUserSync(cookies, tmPixelRefresh) {
+    // the user sync config is contained in `userSyncPixels.json`
+    TN8.userSyncPixels.userSyncPixels.forEach(function (pi) {
+    if (pi.userSyncHtmlSupport !== false && (!(pi.cookieName in cookies) || tmPixelRefresh)) {
+        var url = getUrlTemplateForUserSyncHtml(pi);
+        dropPixelHelper(pi.pixelType, url);
+      }
+    });
+}
+
+function syncWithVisitorId(cookies, visitorID, tmPixelRefresh) {
+    // the user sync config is contained in `userSyncPixels.json`
+    TN8.userSyncPixels.visitorIdUserSyncPixels.forEach(function (pi) {
+        var userSyncHtmlSupport = pi.userSyncHtmlSupport || true;
+        if (pi.userSyncHtmlSupport !== false && (!(pi.cookieName in cookies) || tmPixelRefresh)) {
+            var url = getUrlTemplateForUserSyncHtml(pi).replace("{visitorID}", visitorID);
+            dropPixelHelper(pi.pixelType, url);
+        }
+    });
+}
+
+function doBidiSyncWithVisitorId(cookies, visitorID, tmPixelRefresh) {
+    // bi-directional user sync
+    TN8.userSyncPixels.bidiUserSyncPixels.forEach(function (pi) {
+        if (!(pi.cookieName in cookies) || (cookies[pi.cookieName] - Date.now() > pi.timeoutSeconds*1000) || tmPixelRefresh) {
+            var url = getUrlTemplateForUserSyncHtml(pi).replace("{visitorID}", visitorID);
+            document.cookie = pi.cookieName + "=" + Date.now() + "; Max-Age=" + pi.timeoutSeconds + "; Secure; SameSite=None";
+            dropPixelHelper(pi.pixelType, url);
+        }
+    });
+}
+
+function getUrlTemplateForUserSyncHtml(pixelInfo) {
+    if (pixelInfo.userSyncHtmlOverrides && pixelInfo.userSyncHtmlOverrides.urlTemplate) {
+        return pixelInfo.userSyncHtmlOverrides.urlTemplate;
+    }
+    return pixelInfo.urlTemplate;
+}
+
+function dropPixelHelper(pixelType, url) {
+    if (pixelType === "PIXEL") {
+        TN8.tag.dropPixel(url)
+    } else if (pixelType === "IFRAME") {
+        TN8.tag.dropIFPixel(url);
+    } else if (pixelType === "JS") {
+        TN8.tag.dropJsPixel(url);
+    }
+}
+
+function callUrl(url, resolve, reject) {
+	var r = new XMLHttpRequest();
+    r.addEventListener("load", resolve);
+    r.addEventListener("error", reject);
+    r.withCredentials = true;
+    r.open("GET", url, true);
+    r.send();
+}
+
+function handleIPv6PartnerMatch(ip) {
+	try {
+		if (typeof(ip) !== "string" || !ip.match(/^[0-9a-f:]+$/)) return;
+		var ipHistory = [];
+		var ts = Math.floor((new Date()).getTime() / 1000);
+		var block = expandIPv6Address(ip).substring(0,19);
+		if (typeof(Storage) !== "undefined") {
+			ipHistory = JSON.parse(localStorage.getItem("ipv6History")) || [];
+			if (ipHistory.length > 0 && ipHistory[0].ip === ip) {
+				return;
+			}
+			if (!isTeredoOr6to4(block) && (ipHistory.length === 0 || ipHistory[0].block !== block)) {
+				var avgTimeOnIp = 0, timeOnPreviousBlock = 0, ipsFromBlock = 0;
+				if (ipHistory.length > 0) avgTimeOnIp = Math.floor((ts - ipHistory[ipHistory.length-1].ts) / (ipHistory.length));
+				for (var i=0;i<ipHistory.length;i++) {
+					if (ipHistory[i].block !== ipHistory[0].block) break;
+					timeOnPreviousBlock = ts - ipHistory[i].ts;
+					ipsFromBlock++;
+				}
+				fetch('https://sync.technoratimedia.com/services?srv=cs&source=ipv6'
+					+ '&uid=' + encodeURIComponent(block)
+					+ '&atip=' + encodeURIComponent(avgTimeOnIp)
+					+ '&tbk=' + encodeURIComponent(timeOnPreviousBlock)
+					+ '&nbk=' + encodeURIComponent(ipsFromBlock),
+					{keepalive: true, mode: 'cors', credentials: 'include'}
+				);
+			}
+			ipHistory.unshift({ip, block, ts});
+			localStorage.setItem("ipv6History", JSON.stringify(ipHistory.slice(0,20)));
+		}
+	} catch (ex) {
+	}
+}
+
+function isTeredoOr6to4(ipv6) {
+	// We exclude these for now since users would all appear from the same /64 blocks as
+	// the Teredo exit server, but in the future we could use these to identify household,
+	// since you must have a public, relatively static IP4 to obtain a teredo address.
+	// And 6to4 is similar, but deprecated.
+	return !!(ipv6.match(/^2001:0000:/) || ipv6.match(/^2002:/));
+}
+
+function expandIPv6Address(address) {
+	while (address.match(/::/) && address.split(/:/).length < 8) address = address.replace(/::/, ':::');
+	return address.split(/:/).map(function(x) { return x.padStart(4, '0'); }).join(':');
+}
+
+function runUserSyncing(skipUser, rereadCookies) {
+	// Force HTTPS so we get cookie access
+	if (window.location.href.match(/^http:/)) {
+		window.location.href = window.location.href.replace(/^http:/, 'https:');
+		return;
+	}
+
+	var queryParams = getQP();
+	var cookies = getCookies();
+	var visitorID = cookies.tads_uid;
+	if (typeof visitorID === 'string' && !visitorID.match(/^(?:[A-Z0-9]{32}|GDPR|CCPA)$/)) {
+		visitorID = null;
+		delete cookies.tads_uid;
+		document.cookie="tads_uid=deleted; max-age=0; Path=/; Domain=.technoratimedia.com; Secure; SameSite=None";
+	}
+
+
+	// If we don't have a cookie, get one. Or if user wanted a bidi callback, that'll get a cookie too.
+	// 'rereadCookies' ensures we don't get in a loop
+	if ((queryParams.cb || !visitorID) && !rereadCookies) {
+		var syncParams = window.location.search;
+		if (!queryParams.srv) {
+			syncParams = (syncParams ? syncParams + '&srv=cs' : '?srv=cs');
+		}
+		var rerunSync = function () {
+            runUserSyncing(skipUser, true);
+        }
+		callUrl('https://sync.technoratimedia.com/services' + syncParams, rerunSync, rerunSync); // We re-run even on failure because destination cb may error
+        return;
+	}
+
+    if (visitorID === "GDPR" || visitorID === "CCPA") {
+        return;
+    }
+
+    var ccpaCookie = cookies["ccpaOptOut"];
+    if (ccpaCookie != null && ccpaCookie.length === 4 && ccpaCookie.charAt(2) === 'Y') {
+        return;
+    }
+
+    handleIPv6PartnerMatch(cookies.tads_ipv6);
+
+    /* timestamper */
+    var tmPixelExpiration;
+    var tmPixelRefresh;
+
+    try {
+      tmPixelExpiration = parseInt(localStorage.getItem("tads_last_sync"),10)+(60*60*1000*12); /*12 hour expiration*/
+      tmPixelRefresh = isNaN(tmPixelExpiration) || (tmPixelExpiration < new Date().getTime()) || !visitorID;
+      if (tmPixelRefresh && visitorID) {
+        localStorage.setItem("tads_last_sync", new Date().getTime().toString());
+      }
+    } catch (e) {
+      return;
+    }
+
+    if (!skipUser) {
+        doUserSync(cookies, tmPixelRefresh);
+    }
+
+    if (visitorID) {
+        syncWithVisitorId(cookies, visitorID, tmPixelRefresh);
+        doBidiSyncWithVisitorId(cookies, visitorID, tmPixelRefresh);
+    } else {
+        setTimeout(function() {
+            runUserSyncing(true, rereadCookies);
+        });
+    }
+}
+
+TN8.lq.push(function() {
+    runUserSyncing(false, false);
+});
+</script>
+
+
+</body></html>

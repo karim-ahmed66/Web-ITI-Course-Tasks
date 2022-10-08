@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+	<head>
+		<title>Day 2</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="discription" content="Day 2 Task">
+		<meta name="author" content="Karim" />
+		<meta name="revised" content="Monday, August 22th, 2022, 11:15 am" />
+                    <!-- External style -->
+        <link rel="stylesheet" href="/CSS/master.css">
+	</head>
+    <body>
+        <form action="test.py" method="post">
+			<div>
+				<input type="hidden" value="00000">
+			</div>
+				<label>Username</label><br>
+				<input type="text" placeholder="Enter Your Username" required name="Username">
+			</div>
+			<hr>
+			<div>
+				<label>Password</label><br>
+				<input type="Password" placeholder="Enter Your Password" name="Password" > 
+			</div>
+			<hr>
+			<div>
+				<label>Mobile</label><br>
+				<input type="tel" placeholder="+20100 (234) 123" pattern="[0-9]{2}-([0-9]{3})-[0-9]{3}" value="+201" name="Mobile">
+			</div>
+			<hr>
+			<div>
+				<label>Email</label><br>
+				<input type="Email" placeholder="Enter Your Email" required name="Email" >
+			</div>
+			<hr>
+			<div>
+				<label>Subject</label><br>
+				<input type="text" placeholder="Enter Your Subject" name="Subject">
+			</div>
+			<br>
+				<div>
+					<input type="hidden" id="token" name="token" value="b92f1fc2fce391ad7af633723afd3055">
+				</div>
+				<div>
+					<div>
+						<p>skills</p>
+						<input
+						type="checkbox" 
+						id="skill 1" 
+						name="skill 1" 
+						value="Logical Thinking">
+						<label for="skill 1">Logical Thinking</label>
+					</div>
+					<div>	
+						<input 
+						type="checkbox" 
+						id="skill 2" 
+						name="skill 2" 
+						value="Problem Solving"
+						checked>
+						<label for="skill 2">Problem Solving</label>
+					</div>
+					<div>
+						<input 
+						type="checkbox" 
+						id="skill 3" 
+						name="skill 3" 
+						value="Planning">
+						<label for="skill 3">Planning</label>
+					</div>	
+					<div>
+						<input 
+						type="checkbox" 
+						id="skill 4" 
+						name="skill 4" 
+						value="Analysis">
+						<label for="skill 4">Analysis</label>
+					</div>
+					<div>
+						<input 
+						type="checkbox" 
+						id="skill 5" 
+						name="skill 5" 
+						value="Advanced Search">
+						<label for="skill 5">Advanced Search</label>
+					</div>
+				</div>
+				<div>
+					<p>jops</p>
+					<div>
+						<input 
+						type="radio" 
+						id="job 1" 
+						name="job 1"
+						value="Back-End Developer">
+						<label for="job 1">Back-End Developer</label>
+					</div>
+					<div>	
+						<input 
+						type="radio" 
+						id="job 2" 
+						name="job 2"
+						value="Front-End Developer"
+						checked>
+						<label for="job 2">Front-End Developer</label>
+					</div>	
+					<div>	
+						<input 
+						type="radio" 
+						id="job 3" 
+						name="job 3"
+						value="Business Analyst">
+						<label for="job 3">Business Analyst</label>
+					</div>
+					<div>
+						<input 
+						type="radio" 
+						id="job 4" 
+						name="job 4"
+						value="Project Manager">
+						<label for="job 4">Project Manager</label>
+					</div>	
+					<div>	
+						<input
+						type="radio" 
+						id="job 5" 
+						name="job 5"
+						value="Scrum Master">
+						<label for="job 5">Scrum Master</label>
+					</div>
+				</div>
+				<div>
+					<label>Choose Book</label><br>
+					<select id="book" name="Choose Book">
+						<optgroup label="PHP">
+							<option value="1">v5.0</option>
+							<option value="2">v7.0</option>
+							<option value="3">v8.0</option>
+						</optgroup>
+						<optgroup label="Python">
+							<option value="4">v2.0</option>
+							<option value="5">v3.0</option>
+							<option value="6">v3.9</option>
+						</optgroup>
+					</select>
+				</div>
+				<div>
+					<label for="bb">brief</label>
+					<textarea id="bb" name="bb" rows="4" cols="50">Write Here Why You Want To Learn Programming</textarea>
+				</div>
+				<div>
+					<label for="Search">Search</label><br>
+					<br>
+					<input 
+					type="Search" 
+					id="Search" 
+					name="Search"
+					placeholder="Enter A Search Word"
+					autofocus>
+				</div>
+				<br>
+				<div>
+					<label for="File">Upload</label><br>
+					<br>
+					<input 
+					type="File" 
+					id="File" 
+					name="File">
+				</div>
+				<br>
+				<div>
+					<label for="URL">URL</label><br>
+					<br>
+					<input 
+					type="URL" 
+					id="URL" 
+					name="URL"
+					required>
+				</div>
+				<br>
+				<div>
+					<label for="Date">Date</label>
+					<input 
+					type="Date" 
+					id="Date" 
+					name="Date"
+					value="1982-10-25">
+				</div>
+				<br>
+				<div>
+					<label for="Month">Month</label>
+					<input 
+					type="Month"
+					id="Month" 
+					name="Month"
+					value="1982-10">
+				</div>
+				<br>	
+				<input type="submit" value="Send Data">
+				<input type="reset" value="Empty Form">
+		</form>
+    </body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <title>Add Client</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discription" content="Day 8 Task">
+    <meta name="author" content="Karim" />
+    <meta name="revised" content="Wed, August 24th, 2022, 11:15 am" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Jomhuria&display=swap" rel="stylesheet">
+        
+    <style>
+        * {
+            font-family: 'Cairo', sans-serif;
+            text-transform: capitalize;
+        }
+        .container {
+            background-color: rgb(0,185,136);
+            margin-top: 20px;
+            height: 470px;
+            width: 1200px;
+            padding: 0 0 0 0;
+            position: relative;
+            border-radius: 20px;
+        }
+
+        .container .nav {
+            height: 50px;
+            border-radius: 20px 20px 0 0;
+        }
+
+        .container .header {
+            height: 405px;
+            width: 1200px;
+            border-radius: 0 0 20px 20px;
+            display: flex;
+        }
+        .container .header .left
+        {
+            width: 845px;
+        }
+        .container .header .right
+        {
+            width: 330px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <nav class="navbar navbar-expand-lg" style=" border-radius: 20px 20px 0 0;height: 50px;box-shadow: 1px 3px 20px 1px rgba(255, 255, 255, 0.555);">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                    </a>
+                    <p style="padding-top: 15px;">Add Client System</p>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav" style="margin-left: 860px;">
+                            <li class="nav-item me-1">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item me-1">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="header mt-3">
+            <div class="right">
+                <div class="form-group mt-4" style="display: flex; align-items: center;">
+                    <label class="mx-3" style="font-size: 18px;">First Name :</label>
+                    <input type="text" id="Fname" placeholder="Enter First Name" style="border-radius: 15px; padding: 5px 10px; width: 200px; border: none; background-color: rgb(13,41,53); color: rgb(0,185,136);">
+                </div>
+                <div class="form-group mt-4" style="display: flex; align-items: center;">
+                    <label class="mx-3" style="font-size: 18px;">Last Name :</label>
+                    <input type="text" id="Lname" placeholder="Enter Last Name" style="border-radius: 15px; padding: 5px 10px; width: 200px; border: none; background-color: rgb(13,41,53); color: rgb(0,185,136);">
+                </div>
+                <div class="form-group mt-4" style="display: flex; align-items: center;">
+                    <label class="mx-3" style="font-size: 18px;">Phone Num :</label>
+                    <input type="text" id="phoneNum" placeholder="Enter Phone Number" style="margin-left: -8px; border-radius: 15px; padding: 5px 10px; width: 200px; border: none; background-color: rgb(13,41,53); color: rgb(0,185,136);">
+                </div>
+                <div class="form-group mt-4" style="display: flex; align-items: center;">
+                    <label class="mx-3" style="font-size: 18px;">Email :</label>
+                    <input type="text" id="Email" placeholder="example@gmail.com" style="margin-left: 40px; border-radius: 15px; padding: 5px 10px; width: 200px; border: none; background-color: rgb(13,41,53); color: rgb(0,185,136);">
+                </div>
+                <div class="form-group mt-4" style="display: flex; align-items: center;">
+                    <label class="mx-3" style="font-size: 18px;">city :</label>
+                    <input type="text" id="city" placeholder="Enter Your city" style="margin-left: 54px; border-radius: 15px; padding: 5px 10px; width: 200px; border: none; background-color: rgb(13,41,53); color: rgb(0,185,136);">
+                </div>
+    
+                <button onclick="addClient()" class="btn btn-success mt-5 mx-auto d-block"> Add Client </button>
+    
+            </div>
+            <div class="left">
+                <table class="table table-hover table-striped mt-3 mx-3" style="border: 1px;">
+                    <thead >
+                        <tr>
+                            <th>F-Name</th>
+                            <th>L-Name</th>
+                            <th>Phone-Num</th>
+                            <th>E-mail</th>
+                            <th>City</th>
+                            <th>Date</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="clientList">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="footer">
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="#" class="nav-link px-2" style="color: green;">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2" style="color: green;">Features</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2" style="color: green;">Pricing</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2" style="color: green;">FAQs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2" style="color: green;">About</a></li>
+                </ul>
+                <p class="text-center" style="color: rgb(13,41,53);">© 2022 Company, Inc</p>
+            </footer>
+        </div>
+
+        <script>
+            
+            let clientArr=[];
+
+            let deleteClient=(itemIndex)=>
+            {
+                clientArr.splice(itemIndex,1);
+                localStorage.setItem("clientStorage",JSON.stringify(clientArr));
+                buildTemplate(clientArr);
+            };
+
+            let buildTemplate = (clients)=>
+            {
+                let clientList = document.getElementById("clientList");
+                clientList.innerHTML='';
+                for(let myClient of clients)
+                {
+                    clientList.innerHTML +=
+                    `<tr>
+                        <td>${myClient.ClientFname}</td>
+                        <td>${myClient.ClientLname}</td>
+                        <td>${myClient.ClientPhoneNum}</td>
+                        <td>${myClient.ClientEmail}</td>
+                        <td>${myClient.ClientCity}</td>
+                        <td>${myClient.createdDate}</td>
+                        <td><button class="btn btn-danger" onclick=deleteClient(${clients.indexOf(myClient)})>Delete</button></td>
+                    </tr>`
+                }
+            }
+            if(localStorage.getItem("clientStorage")!=null)
+            {
+                let JsonArr = localStorage.getItem("clientStorage");
+                clientArr = JSON.parse(JsonArr);
+                buildTemplate(clientArr);
+            }
+            class Client
+            {
+                constructor(FnameValue,LnameValue,PhoneNumValue,EmailValue,CityValue)
+                {
+                    this.ClientFname=FnameValue;
+                    this.ClientLname=LnameValue;
+                    this.ClientPhoneNum=PhoneNumValue;
+                    this.ClientEmail=EmailValue;
+                    this.ClientCity=CityValue;
+                    this.createdDate=new Date().toLocaleDateString("en-US");
+                }
+            }
+
+            let addClient=()=>
+            {
+                let Fname = document.getElementById("Fname").value;
+                let Lname = document.getElementById("Lname").value;
+                let PhoneNum = document.getElementById("phoneNum").value;
+                let Email = document.getElementById("Email").value;
+                let City = document.getElementById("city").value;
+                //let myobj=new Client(name,price,description);
+                clientArr.push(new Client(Fname,Lname,PhoneNum,Email,City));
+                //clientArr.push(ClientName:name,....);
+                /*let clientList = document.getElementById("clientList");
+                for(let myClient of clientArr)
+                {
+                    clientList.innerHTML +=
+                    `<tr>
+                        <td>${myClient.ClientName}</td>
+                        <td>${myClient.ClientPrice}</td>
+                        <td>${myClient.ClientDescription}</td>
+                        <td>${myClient.createdDate}</td>
+                    </tr>`
+                }*/
+                buildTemplate(clientArr);
+                localStorage.setItem("clientStorage",JSON.stringify(clientArr));
+                document.getElementById("Fname").value="";
+                document.getElementById("Lname").value="";
+                document.getElementById("phoneNum").value="";
+                document.getElementById("Email").value="";
+                document.getElementById("city").value="";
+            }
+
+
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"
+        src="/docs/5.2/dist/js/bootstrap.bundle.min.js">
+    
+        </script>
+</body>
+</html>

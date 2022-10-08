@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <title>Form Online</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discription" content="Day 8 Task">
+    <meta name="author" content="Karim" />
+    <meta name="revised" content="Wed, August 24th, 2022, 11:15 am" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Jomhuria&display=swap" rel="stylesheet">
+        
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <nav class="navbar navbar-expand-lg" style="height: 70px;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav" style="margin-left: 280px;">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    HOME
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Home Wide</a></li>
+                                    <li><a class="dropdown-item" href="#">Home Boxed</a></li>
+                                    <li><a class="dropdown-item" href="#">RTL Version</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    ABOUT
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">About style 1</a></li>
+                                    <li><a class="dropdown-item" href="#">About style 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Vehicles</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    PAGES
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">ShortCodes</a></li>
+                                    <li><a class="dropdown-item" href="#">Typography</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    SERVICES
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">All Servises</a></li>
+                                    <li><a class="dropdown-item" href="#">Single Servises</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    BLOG
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Blog Classic</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item me-1">
+                                <a class="nav-link" href="#">RATES & PLANS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">CONTACTS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container" id="posts-list" style="margin-left: 450px;">
+            <div class="alert alert-success" role="alert" id="alert" style="display: none; width: 290px;">
+                Submitted Successfully
+            </div>
+            <div class="form-group mt-4" style="display: flex; align-items: center;">
+                <label class="mx-3" style="font-size: 18px;">User ID</label>
+                <input type="text" id="UserID" placeholder="Enter User ID" style="border-radius: 15px; padding: 5px 10px; width: 200px; border: none; background-color: rgb(13,41,53); color: rgb(0,185,136);">
+            </div>
+            <div class="form-group mt-4" style="display: flex; align-items: center;">
+                <label class="mx-3" style="font-size: 18px;">Title</label>
+                <input type="text" id="Title" placeholder="Enter Title" style="margin-left: 20px; border-radius: 15px; padding: 5px 10px; width: 200px; border: none; background-color: rgb(13,41,53); color: rgb(0,185,136);">
+            </div>
+            <div class="form-group mt-4" style="display: flex; align-items: center;">
+                <label class="mx-3" style="font-size: 18px;">Body</label>
+                <textarea id="Body" cols="20" rows="4" placeholder="Enter Body" style="margin-left: 15px; border-radius: 15px; padding: 5px 10px; width: 200px; border: none; background-color: rgb(13,41,53); color: rgb(0,185,136);"></textarea>
+            </div>
+            <button onclick="addPost()" class="btn btn-success mt-5 d-block" style="margin-left: 125px;"> Add New Post </button>
+        </div>
+        <div class="footer">
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="#" class="nav-link px-2">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2">Features</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2">Pricing</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2">FAQs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2">About</a></li>
+                </ul>
+                <p class="text-center text-muted">© 2022 Company, Inc</p>
+            </footer>
+        </div>
+    </div>
+<script>
+    let addPost=()=>
+    {
+        let titleValue = document.getElementById("Title").value;
+        let userIDValue = document.getElementById("UserID").value;
+        let bodyValue = document.getElementById("Body").value;
+        fetch("https://jsonplaceholder.typicode.com/posts",
+        {
+            
+            method: "POST",
+            body: JSON.stringify({
+                title: titleValue,
+                body: bodyValue,
+                userID: userIDValue
+            }),
+            headers:
+            {
+                "Content-type": "application/json; charset=UTF-8"
+            }
+        })
+        .then(()=>document.getElementById('alert').style.display="block")
+        //.then(Response => Response.json())
+        //.then(json => console.log(json));
+    }
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"
+    src="/docs/5.2/dist/js/bootstrap.bundle.min.js">
+
+</script>
+</body>
+</html>

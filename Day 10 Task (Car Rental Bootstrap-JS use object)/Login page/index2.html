@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <title>Car Rental</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discription" content="Day 8 Task">
+    <meta name="author" content="Karim" />
+    <meta name="revised" content="Wed, August 24th, 2022, 11:15 am" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Jomhuria&display=swap" rel="stylesheet">
+    <Style>
+        * {
+            font-family: sans-serif;
+            text-transform: capitalize;
+            box-sizing: border-box;
+        }
+
+        .container {
+            margin-top: 10px;
+        }
+
+        .container .nav {
+            height: 70px;
+        }
+
+        .nav-link:hover {
+            color: orangered;
+            transition: 0.7s;
+        }
+
+        .dropdown-menu {
+            background-color: rgba(228, 150, 10, 255);
+        }
+
+        .dropdown-item {
+            font-size: 14px;
+        }
+
+        .dropdown-item:hover {
+            color: white;
+            background: none;
+            transition: 0.5s;
+        }
+
+        .container .body .part2 .left .btn1 {
+            margin-top: 280px;
+            margin-left: 140px;
+            width: 200px;
+            padding: 20px;
+            border: none;
+            background-color: rgb(58, 58, 58);
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .container .body .part2 .left .btn1:hover {
+            background-color: rgb(233, 95, 43);
+            transition: 0.7s;
+        }
+
+        .footer .nav .nav-item:hover {
+            color: rgb(233, 95, 43);
+            transition: 0.7s;
+        }
+
+        .card-img {
+            background-color: rgba(0, 0, 0, 0.164);
+            border-radius: 70px 70px 0 0;
+        }
+
+        .card-img:hover {
+            background-color: rgb(233, 95, 43);
+            scale: calc(1.02);
+            transition: 1s;
+        }
+    </Style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <nav class="navbar navbar-expand-lg" style="height: 70px;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="../images/Logo.png" style="height: 70px; border-radius: 15px;">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav" style="margin-left: 280px;">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    HOME
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Home Wide</a></li>
+                                    <li><a class="dropdown-item" href="#">Home Boxed</a></li>
+                                    <li><a class="dropdown-item" href="#">RTL Version</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    ABOUT
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">About style 1</a></li>
+                                    <li><a class="dropdown-item" href="#">About style 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Vehicles</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    PAGES
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">ShortCodes</a></li>
+                                    <li><a class="dropdown-item" href="#">Typography</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    SERVICES
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">All Servises</a></li>
+                                    <li><a class="dropdown-item" href="#">Single Servises</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    BLOG
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Blog Classic</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item me-1">
+                                <a class="nav-link" href="#">RATES & PLANS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">CONTACTS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="body">
+            <div class="part1-carousel">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../Images/slide3.jpg" class="d-block w-100" style="height: 600px;">
+                            <div class="carousel-caption d-none d-md-block" style="color: black; font-weight: bold;">
+                                <h1>Rent A Car Now For Your Trip</h1>
+                                <p>NO CANCELLATION OR AMENDMENT FEES</p>
+                                <p>NO CREDIT CARD FEES</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../Images/slide4.jpg" class="d-block w-100" style="height: 600px;">
+                            <div class="carousel-caption d-none d-md-block" style="color: white; font-weight: bold;">
+                                <h1>WE LET YOU RIDE PREMIUM CARS</h1>
+                                <p>NO CANCELLATION OR AMENDMENT FEES</p>
+                                <p>NO CREDIT CARD FEES</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../Images/slide2.jpg" class="d-block w-100" style="height: 600px;">
+                            <div class="carousel-caption d-none d-md-block" style="color: black; font-weight: bold;">
+                                <h1>BEST WORLDWIDE CAR HIRE DEALS</h1>
+                                <p>NO CANCELLATION OR AMENDMENT FEES</p>
+                                <p>NO CREDIT CARD FEES</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="part2"
+                style="position: relative; margin-top: 60PX; height: 600px; background-color: rgb(242,242,242);">
+                <div class="left" style="width: 100%; height: inherit;">
+                    <h1
+                        style="font-weight: bolder;margin-left: 140px; padding-top: 100px; margin-bottom: 70px; color: rgb(58,58,58);">
+                        WHY CHOOSE US?</h1>
+                    <div style="margin-left: 140px; position: absolute; width: 250px; height: 235px;">
+                        <p style="margin-bottom: 40px;color: rgb(178,178,178);"><img src="../Images/tick.png"
+                                style="margin-top: -5px;"> Gas & insurance included</p>
+                        <p style="margin-bottom: 40px;color: rgb(178,178,178);"><img src="../Images/tick.png"
+                                style="margin-top: -5px;"> Any Locations Rent</p>
+                        <p style="margin-bottom: 40px;color: rgb(178,178,178);"><img src="../Images/tick.png"
+                                style="margin-top: -5px;"> Cleaning Included</p>
+                        <p style="margin-bottom: 40px;color: rgb(178,178,178);"><img src="../Images/tick.png"
+                                style="margin-top: -5px;"> Online 24 / 7 Support</p>
+                    </div>
+                    <div style=" position: absolute;width: 911px; left: 390px;">
+                        <img src="../Images/Left.png" style=" width: 300px; height: 250px;">
+                        <img src="../Images/BMW front.png" style=" width: 300px; height: 250px;">
+                        <img src="../Images/Right.png" style=" width: 300px; height: 250px;">
+                    </div>
+                    <button class="btn1">SEARCH FOR CAR</button>
+                </div>
+            </div>
+            <P style="font-size: 25px; font-weight: bold; text-align: center; margin-top: 90px;margin-bottom: 90px;">
+                MEET OUR CARS</P>
+            <div class="cardss">
+                
+                <div class="container mt-5">
+                    
+                    <div class="Card row" style="border-radius: 70px;" id="car-list">
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="#" class="nav-link px-2">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2">Features</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2">Pricing</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2">FAQs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2">About</a></li>
+                </ul>
+                <p class="text-center text-muted">© 2022 Company, Inc</p>
+            </footer>
+        </div>
+    </div>
+    <script>
+        const carsArray = [
+            {
+                imageUrl: '../Images/Astron 2015.png',
+                model: 'Astron',
+                color: 'Dark Blue',
+                price: '10000 EGP/DAY',
+            },
+            {
+                imageUrl: '../Images/Audi 2020.png',
+                model: 'Audi 2020',
+                color: 'Black',
+                price: '8900 EGP/DAY',
+            },
+            {
+                imageUrl: '../Images/Audi 2021.png',
+                model: 'Audi 2021',
+                color: 'Red',
+                price: '9400 EGP/DAY',
+            },
+            {
+                imageUrl: '../Images/Audi 2022.png',
+                model: 'Audi 2022',
+                color: 'Red',
+                price: '12000 EGP/DAY',
+            },
+            {
+                imageUrl: '../Images/bentley 2011.png',
+                model: 'Bentley 2011',
+                color: 'blue',
+                price: '9000 EGP/DAY',
+            },
+            {
+                imageUrl: '../Images/BMW 2016.png',
+                model: 'BMW 2016',
+                color: 'Silver',
+                price: '7000 EGP/DAY',
+            },
+            {
+                imageUrl: '../Images/BMW 2018.png',
+                model: 'BMW 2018',
+                color: 'Blue',
+                price: '7500 EGP/DAY',
+            },
+            {
+                imageUrl: '../Images/BMW X5.png',
+                model: 'BMW X5',
+                color: 'Dark Silver',
+                price: '11100 EGP/DAY',
+            },
+            {
+                imageUrl: '../Images/hyundai-elantra.png',
+                model: 'Hyundai Elantra',
+                color: 'Silver',
+                price: '5000 EGP/DAY',
+            },
+            {
+                imageUrl: '../Images/Left.png',
+                model: 'Mercedes 2018',
+                color: 'White',
+                price: '14450 EGP/DAY',
+            },
+            {
+                imageUrl: '../Images/mercedes 2017.png',
+                model: 'Mercedes 2017',
+                color: 'Dark Silver',
+                price: '15600 EGP/DAY',
+            },
+            {
+                imageUrl: '../Images/mercedes 2018.png',
+                model: 'Mercedes 2018',
+                color: 'Black',
+                price: '10100 EGP/DAY',
+            },
+            {
+                imageUrl: '../Images/mercedes 2022.png',
+                model: 'Mercedes 2022',
+                color: 'Dark Silver',
+                price: '19500 EGP/DAY',
+            },
+            {
+                imageUrl: '../Images/mini-cooper.png',
+                model: 'Mini Cooper',
+                color: 'Red',
+                price: '15050 EGP/DAY',
+            },
+            {
+                imageUrl: '../Images/porsche.png',
+                model: 'Porsche',
+                color: 'Black',
+                price: '25000 EGP/DAY',
+            },
+            {
+                imageUrl: '../Images/toyota corola.png',
+                model: 'Toyota Corola',
+                color: 'Black',
+                price: '4000 EGP/DAY',
+            },
+            {
+                imageUrl: '../Images/toyota.png',
+                model: 'Toyota',
+                color: 'White',
+                price: '14100 EGP/DAY',
+            },
+            {
+                imageUrl: '../Images/volkswagen.png',
+                model: 'volkswagen',
+                color: 'Blue',
+                price: '5000 EGP/DAY',
+            },
+        ]
+
+        let Items = '';
+        let carsContainer = document.getElementById("car-list");
+        for (let i = 0; i < carsArray.length; i++) {
+            Items += `<div class = "col-4 mb-5";>
+                            <div class="card-img">
+                                <img class="card-img-top" src = "${carsArray[i].imageUrl}" alt = "Card image" Style = "width:400px; height:350px;">
+                            </div>
+                            <div class="card-body" style="padding-top: 20px;margin-top: 10px; margin-right: 50px; border-radius:0 0 70px 70px; width: 100%; box-shadow: 1px -5px 15px 1px rgba(0, 0, 0, 0.164); ">
+                                <h2 class="card-title text-center" style="font-weight: bolder; margin-bottom: 10px;">${carsArray[i].model}</h2>
+                                <div style="display: flex; position: relative;">
+                                    <P class = "card-text" style="margin-left: 20px; font-size: 18px;">Color : ${carsArray[i].color}</P>
+                                    <P class = "card-text"  style="position: absolute; left: 240px; color: rgb(233, 95, 43); font-weight: bold; font-size: 18px;">${carsArray[i].price}</P>
+                                </div>
+                            </div>
+                    </div>`;
+        }
+        carsContainer.innerHTML = Items;
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"
+        src="/docs/5.2/dist/js/bootstrap.bundle.min.js">
+
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+<div class="card mb-3 mt-5" style="width: 300px; margin-left: 40px;">
+  <div class="row g-0">
+    <div class="col-md-4 mt-4">
+      <img [src]="customers.imgUrl" class="img-fluid rounded-start mx-3">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body mx-4">
+        <h5 class="card-title">{{customers.title}}</h5>
+        <p class="card-text mb-0">{{customers.country.toUpperCase()}}</p>
+        <p class="card-text mb-1">{{customers.City | uppercase}}</p>
+        <button style="color: blue;border: none;background-color: white;">View Orders</button>
+        <P class="card-text mt-2 mx-4">{{customers.price | currency:'$' }}</P>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Slice: 0 : 12-->
